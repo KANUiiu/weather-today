@@ -89,3 +89,74 @@ h1{
     display: none;
     color: hsl(200, 7%, 33%);
 }
+
+/* Mobile responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        background-position: center center; /* Make sure background is centered on smaller screens */
+    }
+
+    h1 {
+        font-size: 28px;  /* Reduce font size for mobile */
+        margin: 10px 0;
+    }
+
+    .card {
+        max-width: 90%; /* Make the card take up more width on smaller screens */
+        margin-top: 50px;
+        padding: 20px 30px;  /* Reduce padding slightly for mobile */
+    }
+
+    .search input {
+        height: 50px;
+        font-size: 16px; /* Adjust input font size */
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather i {
+        font-size: 70px; /* Resize the weather icon */
+    }
+
+    .weather p {
+        font-size: 30px; /* Reduce font size of the temperature */
+    }
+
+    .error {
+        font-size: 18px; /* Adjust error message size */
+    }
+}
+
+/* Very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;  /* Further reduce heading font size for small devices */
+    }
+
+    .card {
+        max-width: 95%;
+        margin-top: 40px; /* Reduce top margin */
+        padding: 15px 20px;  /* Reduce padding further */
+    }
+
+    .search input {
+        height: 45px;
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .weather i {
+        font-size: 60px; /* Further reduce the size of the weather icon */
+    }
+
+    .weather p {
+        font-size: 24px; /* Make temperature text smaller */
+    }
+}
